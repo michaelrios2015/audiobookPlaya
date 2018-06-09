@@ -21,14 +21,14 @@
 
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/miwok_text_view"
+        android:id="@+id/title_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="lutti"
         />
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/default_text_view"
+        android:id="@+id/author_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="one"

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.android.audiobookplaya;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                // Create a new intent to open the {@link BookOne}
+                Intent numbersIntent = new Intent(MainActivity.this, BookOne.class);
 
                 // Start the new activity
                 startActivity(numbersIntent);
@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link FamilyActivity}
-                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+                // Create a new intent to open the {@link BookTwo}
+                Intent familyIntent = new Intent(MainActivity.this, BookTwo.class);
 
                 // Start the new activity
                 startActivity(familyIntent);
@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the colors category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link ColorsActivity}
-                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                // Create a new intent to open the {@link BookThree}
+                Intent colorsIntent = new Intent(MainActivity.this, BookThree.class);
 
                 // Start the new activity
                 startActivity(colorsIntent);
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the phrases category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link PhrasesActivity}
-                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                // Create a new intent to open the {@link BookFour}
+                Intent phrasesIntent = new Intent(MainActivity.this, BookFour.class);
 
                 // Start the new activity
                 startActivity(phrasesIntent);

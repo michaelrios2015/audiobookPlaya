@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.android.audiobookplaya;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -25,19 +25,19 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * {@link WordAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
- * based on a data source, which is a list of {@link Word} objects.
+ * {@link BookAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
+ * based on a data source, which is a list of {@link Book} objects.
  */
-public class WordAdapter extends ArrayAdapter<Word>  {
+public class BookAdapter extends ArrayAdapter<Book>  {
 
     /**
-     * Create a new {@link WordAdapter} object.
+     * Create a new {@link BookAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param words is the list of {@link Word}s to be displayed.
+     * @param books is the list of {@link Book}s to be displayed.
      */
-    public WordAdapter(Context context, ArrayList<Word> words) {
-        super(context, 0, words);
+    public BookAdapter(Context context, ArrayList<Book> books) {
+        super(context, 0, books);
     }
 
     @Override
@@ -49,20 +49,20 @@ public class WordAdapter extends ArrayAdapter<Word>  {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link Word} object located at this position in the list
-        Word currentWord = getItem(position);
+        // Get the {@link Book} object located at this position in the list
+        Book currentBook = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID miwok_text_view.
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        // Get the Miwok translation from the currentWord object and set this text on
-        // the Miwok TextView.
-        miwokTextView.setText(currentWord.getMiwokTranslation());
+        TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_text_view);
+        // Get the title from the currentBook object and set this text on
+        // the title TextView.
+        titleTextView.setText(currentBook.getTitle());
 
         // Find the TextView in the list_item.xml layout with the ID default_text_view.
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
-        // Get the default translation from the currentWord object and set this text on
-        // the default TextView.
-        defaultTextView.setText(currentWord.getDefaultTranslation());
+        TextView authorTextView = (TextView) listItemView.findViewById(R.id.author_text_view);
+        // Get the author from the currentBook object and set this text on
+        // the author TextView.
+        authorTextView.setText(currentBook.getAuthor());
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.

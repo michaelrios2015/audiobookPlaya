@@ -13,45 +13,43 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.android.audiobookplaya;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class NumbersActivity extends AppCompatActivity {
+public class BookThree extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        // Create a list of words
-        ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one", "lutti"));
-        words.add(new Word("two", "otiiko"));
-        words.add(new Word("three", "tolookosu"));
-        words.add(new Word("four", "oyyisa"));
-        words.add(new Word("five", "massokka"));
-        words.add(new Word("six", "temmokka"));
-        words.add(new Word("seven", "kenekaku"));
-        words.add(new Word("eight", "kawinta"));
-        words.add(new Word("nine", "wo’e"));
-        words.add(new Word("ten", "na’aacha"));
+        // Create a list of books
+        ArrayList<Book> books = new ArrayList<Book>();
+        books.add(new Book("red", "weṭeṭṭi"));
+        books.add(new Book("mustard yellow", "chiwiiṭә"));
+        books.add(new Book("dusty yellow", "ṭopiisә"));
+        books.add(new Book("green", "chokokki"));
+        books.add(new Book("brown", "ṭakaakki"));
+        books.add(new Book("gray", "ṭopoppi"));
+        books.add(new Book("black", "kululli"));
+        books.add(new Book("white", "kelelli"));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link BookAdapter}, whose data source is a list of {@link Book}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this, words);
+        BookAdapter adapter = new BookAdapter(this, books);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // word_list.xml layout file.
         ListView listView = (ListView) findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link BookAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Book} in the list.
         listView.setAdapter(adapter);
     }
 }

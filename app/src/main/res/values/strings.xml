@@ -14,17 +14,17 @@
 -->
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
-    <string name="app_name">Miwok</string>
+    <string name="app_name">Audio Books</string>
 
     <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">Phrases</string>
+    <string name="category_book_four">Book Four</string>
 
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
+    <!-- Category name for the vocabulary books for colors [CHAR LIMIT=20] -->
+    <string name="category__book_three">Book Three</string>
 
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Numbers</string>
+    <!-- Category name for the vocabulary books for numbers [CHAR LIMIT=20] -->
+    <string name="category_book_one">Book One</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family Members</string>
+    <!-- Category name for the vocabulary books for family members [CHAR LIMIT=20] -->
+    <string name="category__book_two">Book Two</string>
 </resources>
