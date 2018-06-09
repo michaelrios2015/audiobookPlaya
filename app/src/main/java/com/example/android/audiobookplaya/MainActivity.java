@@ -31,67 +31,67 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
-        TextView numbers = (TextView) findViewById(R.id.numbers);
+        // Find the View that shows the bookOne category
+        TextView bookOne = (TextView) findViewById(R.id.bookOne);
 
         // Set a click listener on that View
-        numbers.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+        bookOne.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the bookOne category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link BookOne}
-                Intent numbersIntent = new Intent(MainActivity.this, BookOne.class);
+                Intent bookOneIntent = new Intent(MainActivity.this, BookOne.class);
 
                 // Start the new activity
-                startActivity(numbersIntent);
+                startActivity(bookOneIntent);
             }
         });
 
-        // Find the View that shows the family category
-        TextView family = (TextView) findViewById(R.id.family);
+        // Find the View that shows the bookTwo category
+        TextView bookTwo = (TextView) findViewById(R.id.bookTwo);
 
         // Set a click listener on that View
-        family.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the family category is clicked on.
+        bookTwo.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the bookTwo category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link BookTwo}
-                Intent familyIntent = new Intent(MainActivity.this, BookTwo.class);
+                Intent bookTwoIntent = new Intent(MainActivity.this, BookTwo.class);
 
                 // Start the new activity
-                startActivity(familyIntent);
+                startActivity(bookTwoIntent);
             }
         });
 
-        // Find the View that shows the colors category
-        TextView colors = (TextView) findViewById(R.id.colors);
+        // Find the View that shows the bookThree category
+        TextView bookThree = (TextView) findViewById(R.id.bookThree);
 
         // Set a click listener on that View
-        colors.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the colors category is clicked on.
+        bookThree.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the bookThree category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link BookThree}
-                Intent colorsIntent = new Intent(MainActivity.this, BookThree.class);
+                Intent bookThreeIntent = new Intent(MainActivity.this, BookThree.class);
 
                 // Start the new activity
-                startActivity(colorsIntent);
+                startActivity(bookThreeIntent);
             }
         });
 
-        // Find the View that shows the phrases category
-        TextView phrases = (TextView) findViewById(R.id.phrases);
+        // Find the View that shows the bookFour category
+        TextView bookFour = (TextView) findViewById(R.id.bookFour);
 
         // Set a click listener on that View
-        phrases.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the phrases category is clicked on.
+        bookFour.setOnClickListener(new OnClickListener() {
+            // The code in this method will be executed when the bookFour category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link BookFour}
-                Intent phrasesIntent = new Intent(MainActivity.this, BookFour.class);
+                Intent bookFourIntent = new Intent(MainActivity.this, BookFour.class);
 
                 // Start the new activity
-                startActivity(phrasesIntent);
+                startActivity(bookFourIntent);
             }
         });
     }

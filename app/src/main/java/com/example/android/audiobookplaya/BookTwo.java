@@ -14,18 +14,11 @@ public class BookTwo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        // Create a list of books
+        // Create a list of books, books and chapters should be seperated
         ArrayList<Book> books = new ArrayList<Book>();
-        books.add(new Book("father", "әpә"));
-        books.add(new Book("mother", "әṭa"));
-        books.add(new Book("son", "angsi"));
-        books.add(new Book("daughter", "tune"));
-        books.add(new Book("older brother", "taachi"));
-        books.add(new Book("younger brother", "chalitti"));
-        books.add(new Book("older sister", "teṭe"));
-        books.add(new Book("younger sister", "kolliti"));
-        books.add(new Book("grandmother ", "ama"));
-        books.add(new Book("grandfather", "paapa"));
+        books.add(new Book("Author Two", "Title Two"));
+        books.add(new Book("Chapter One", "Chapter One Title"));
+        books.add(new Book("Chapter Two", "Chapter Two Title"));
 
         // Create an {@link BookAdapter}, whose data source is a list of {@link Book}s. The
         // adapter knows how to create list items for each item in the list.

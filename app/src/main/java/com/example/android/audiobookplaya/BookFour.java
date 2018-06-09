@@ -31,16 +31,9 @@ public class BookFour extends AppCompatActivity {
 
         // Create a list of books
         ArrayList<Book> books = new ArrayList<Book>();
-        books.add(new Book("Where are you going?", "minto wuksus"));
-        books.add(new Book("What is your name?", "tinnә oyaase'nә"));
-        books.add(new Book("My name is...", "oyaaset..."));
-        books.add(new Book("How are you feeling?", "michәksәs?"));
-        books.add(new Book("I’m feeling good.", "kuchi achit"));
-        books.add(new Book("Are you coming?", "әәnәs'aa?"));
-        books.add(new Book("Yes, I’m coming.", "hәә’ әәnәm"));
-        books.add(new Book("I’m coming.", "әәnәm"));
-        books.add(new Book("Let’s go.", "yoowutis"));
-        books.add(new Book("Come here.", "әnni'nem"));
+        books.add(new Book("Author Four", "Title Four"));
+        books.add(new Book("Chapter One", "Chapter One Title"));
+        books.add(new Book("Chapter Two", "Chapter Two Title"));
 
         // Create an {@link BookAdapter}, whose data source is a list of {@link Book}s. The
         // adapter knows how to create list items for each item in the list.

@@ -30,14 +30,9 @@ public class BookThree extends AppCompatActivity {
 
         // Create a list of books
         ArrayList<Book> books = new ArrayList<Book>();
-        books.add(new Book("red", "weṭeṭṭi"));
-        books.add(new Book("mustard yellow", "chiwiiṭә"));
-        books.add(new Book("dusty yellow", "ṭopiisә"));
-        books.add(new Book("green", "chokokki"));
-        books.add(new Book("brown", "ṭakaakki"));
-        books.add(new Book("gray", "ṭopoppi"));
-        books.add(new Book("black", "kululli"));
-        books.add(new Book("white", "kelelli"));
+        books.add(new Book("Author Three", "Title Three"));
+        books.add(new Book("Chapter One", "Chapter One Title"));
+        books.add(new Book("Chapter Two", "Chapter Two Title"));
 
         // Create an {@link BookAdapter}, whose data source is a list of {@link Book}s. The
         // adapter knows how to create list items for each item in the list.

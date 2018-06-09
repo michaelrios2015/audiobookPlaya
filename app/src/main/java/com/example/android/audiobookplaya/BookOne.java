@@ -28,18 +28,11 @@ public class BookOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        // Create a list of books
+        // Create a list of books, with chapters it would probably make more sense to have them seperate, that will de done in the future :)
         ArrayList<Book> books = new ArrayList<Book>();
-        books.add(new Book("one", "lutti"));
-        books.add(new Book("two", "otiiko"));
-        books.add(new Book("three", "tolookosu"));
-        books.add(new Book("four", "oyyisa"));
-        books.add(new Book("five", "massokka"));
-        books.add(new Book("six", "temmokka"));
-        books.add(new Book("seven", "kenekaku"));
-        books.add(new Book("eight", "kawinta"));
-        books.add(new Book("nine", "wo’e"));
-        books.add(new Book("ten", "na’aacha"));
+        books.add(new Book("Author One", "Title One"));
+        books.add(new Book("Chapter One", "Chapter One Title"));
+        books.add(new Book("Chapter Two", "Chapter Two Title"));
 
         // Create an {@link BookAdapter}, whose data source is a list of {@link Book}s. The
         // adapter knows how to create list items for each item in the list.
