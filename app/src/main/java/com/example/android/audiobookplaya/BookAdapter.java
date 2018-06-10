@@ -28,13 +28,13 @@ import java.util.ArrayList;
  * {@link BookAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
  * based on a data source, which is a list of {@link Book} objects.
  */
-public class BookAdapter extends ArrayAdapter<Book>  {
+public class BookAdapter extends ArrayAdapter<Book> {
 
     /**
      * Create a new {@link BookAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param books is the list of {@link Book}s to be displayed.
+     * @param books   is the list of {@link Book}s to be displayed.
      */
     public BookAdapter(Context context, ArrayList<Book> books) {
         super(context, 0, books);

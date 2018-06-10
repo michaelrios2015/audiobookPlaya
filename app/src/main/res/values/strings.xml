@@ -27,4 +27,6 @@
 
     <!-- Category name for the vocabulary books for family members [CHAR LIMIT=20] -->
     <string name="category__book_two">Book Two</string>
+
+    <string name="play">Play</string>
 </resources>

@@ -20,17 +20,21 @@ package com.example.android.audiobookplaya;
  */
 public class Book {
 
-    /** The author*/
+    /**
+     * The author
+     */
     private String author;
 
-    /** The title */
+    /**
+     * The title
+     */
     private String title;
 
     /**
      * Create a new Book object.
      *
      * @param theAuthor is the author of the book
-     * @param theTitle is the title of the book
+     * @param theTitle  is the title of the book
      */
     public Book(String theAuthor, String theTitle) {
         author = theAuthor;
