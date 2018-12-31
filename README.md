@@ -1,5 +1,7 @@
 Forked from the below repo
 
+Create the structure of an app to play music for a user and build it out.
+
 Miwok App
 ===================================
 
